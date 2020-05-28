@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="stylesheet" href="./css/bootstrap.css">
-   <title>Hello, world!</title>
+   <title>Backdrop-filter</title>
    <style>
       * {
          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, '微軟正黑體';
@@ -15,11 +15,32 @@
       body {
          height: 100%;
       }
+
+      body {
+         background-image: url(./images/Iceland.jpg);
+      }
+
+      .row {
+         border: 0.1vmin solid #fff;
+         border-radius: 1vmin;
+      }
+
+      .row>* {
+         border: 0.1vmin solid #fff;
+      }
+
+      .row>*:nth-child(1) {
+         border-radius: 1vmin 0 0 1vmin;
+      }
+
+      .row>*:nth-last-child(1) {
+         border-radius: 0 1vmin 1vmin 0;
+      }
    </style>
 </head>
 
 <body>
-   <div class="container-fluid">
+   <div class="container-fluid mx-4">
       <div class="row">
          <div class="col"><span> backdrop-filter</span><span>效果</span></div>
          <div class="col">backdrop-filter: none</div>
