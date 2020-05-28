@@ -17,6 +17,16 @@
       }
 
       body {
+         /* background-image: url(./images/Iceland.jpg); */
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         font-size: 2rem;
+         color: #fff;
+         text-shadow: 3px 3px 3px #ccc;
+      }
+
+      #pra {
          background-image: url(./images/Iceland.jpg);
       }
 
@@ -30,31 +40,95 @@
       }
 
       .row>*:nth-child(1) {
-         border-radius: 1vmin 0 0 1vmin;
+         border-radius: 1vmin 1vmin 0 0;
       }
 
       .row>*:nth-last-child(1) {
-         border-radius: 0 1vmin 1vmin 0;
+         border-radius: 0 0 1vmin 1vmin;
+      }
+
+      @media (min-width: 768px) {
+         body {
+            align-items: center;
+         }
+
+         .row {
+            flex-wrap: nowrap;
+         }
+
+         .row>*:nth-child(1) {
+            border-radius: 1vmin 0 0 1vmin;
+         }
+
+         .row>*:nth-last-child(2) {
+            border-radius: 0 1vmin 1vmin 0;
+         }
+
+         .space {
+            -ms-flex: 0 0 3rem;
+            flex: 0 0 3rem;
+            max-width: 3rem;
+            height: 60vh !important;
+         }
+
+         .col-md-3 {
+            -ms-flex: 0 0 500px;
+            flex: 0 0 500px;
+            max-width: 500px;
+            height: 60vh !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
       }
    </style>
 </head>
 
 <body>
-   <div class="container-fluid mx-4">
+   <!-- 利用滑動監控來做 -->
+   <div id="pra" class="list-group w-100 position-fixed h-100 bg-danger">
+   </div>
+
+   <div class="container-fluid px-5" data-spy="scroll" data-target="#pra" data-offset="0">
       <div class="row">
-         <div class="col"><span> backdrop-filter</span><span>效果</span></div>
-         <div class="col">backdrop-filter: none</div>
-         <div class="col">backdrop-filter: grayscale(1)</div>
-         <div class="col">backdrop-filter: brightness(1.5)</div>
-         <div class="col">backdrop-filter: blur(5px)</div>
-         <div class="col">backdrop-filter: contrast(0.8)</div>
-         <div class="col">backdrop-filter: invert(0.7)</div>
-         <div class="col">backdrop-filter: opacity(0.4)</div>
-         <div class="col">backdrop-filter: sepia(0.4)</div>
-         <div class="col">backdrop-filter: saturate(1.8)</div>
-         <div class="col">backdrop-filter: hue-rotate(120deg)</div>
+         <div class="col-12 col-md-3"><span> backdrop-filter</span><span>效果</span></div>
+         <div class="col-12 col-md-3">backdrop-filter: none</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: grayscale(1)">backdrop-filter: grayscale(1)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: brightness(1.5)">backdrop-filter: brightness(1.5)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: blur(5px)">backdrop-filter: blur(5px)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: contrast(0.8)">backdrop-filter: contrast(0.8)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: invert(0.7)">backdrop-filter: invert(0.7)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: opacity(0.4)">backdrop-filter: opacity(0.4)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: sepia(0.4)">backdrop-filter: sepia(0.4)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: saturate(1.8)">backdrop-filter: saturate(1.8)</div>
+         <div class="col-12 col-md-3" style="backdrop-filter: hue-rotate(120deg)">backdrop-filter: hue-rotate(120deg)
+         </div>
+         <div class="space">123</div>
       </div>
    </div>
+
+   <!-- <div id="list-example" class="list-group w-100 position-fixed h-100 bg-danger">
+
+   </div>
+   <div data-spy="scroll" data-target="#list-example" data-offset="0"
+      class="scrollspy-example w-75 h-50 overflow-auto float-right px-5 mt-3 mr-4">
+      <h4 id="list-item-1">Item 1</h4>
+      <p>僅僅苗栗重要期待公開體內宣佈沉默語言有限責任，森林行動網遊簡體保證，軟體令人提出不了動漫生意原始碼隊伍就好其中是否階段，機關共享版大學生傢俱正好空調故障，意味着大幅唯一事故事故下載地址讀者證明經過經銷商基礎上，電視劇平時這時我也標準下午篇文章，不太關心老人措施電力，日期這些，受到權力公里方便著名認為公斤不代表長期而是設為描述，伺服器打電話總部教育超過基層，前進不喜歡晶片皮膚回事閲讀，以往突破諮詢購物目光，那裡整個相信收藏是一種好多平時無關你是貿易則是同樣，神經一時崗位細胞警察維持支撐另一證明欄目一定會完善，希望第二功能記者表面不說，頭髮夢想用品三個，世界上不肯國語安徽，還會整個某些由此英國這就是，社會主義一句話，整個歷史版面成立服務統計屬於一直打電話機械，星座那種研發不能笑道專用包括打造標準概念製作就是，考慮現代化房地產人生，直播主群發搭配一方面也沒衛生郵遞區號，專家妻子，也想你說引起影響大大抱著辦公室維持，成果收藏那位一句機會指出，寫出來不但培養情人方式否則幽默，臉色一本而已理想透明因為細節，漢化二十不久上去或許，查看終於眾人我在難道，授權回覆知名無線舉報禮物他還，女子實在變化塑膠。
+      </p>
+      <h4 id="list-item-2">Item 2</h4>
+      <p>說出相信展示黑暗就算辦理意識，計算機經驗消除多個政治，頻道日誌分公司以上工作，不喜歡措施建設，開展法國進一步然而螢幕階段優惠真實性新手版權正在少女計劃客服，男人做什麼好好江湖協助資格小說車輛網域名稱保存很熱魯蛇規模，空調畢業協議看出不少自己的圖片特殊會議環節必然陷入，東方把你隨後適當廣泛言論理解給我些什麼檢測認定一隻聽說輕易，隊伍團結暴力網頁班傢伙應該周圍將會早上，辛苦見到太麻里避免想起一天溫柔指揮第一姑娘即將變成，學生主任氣息成人部隊時尚各位肌膚，車輛顯然是一種兩次網遊共同測試部落一定會市場動漫消除，尚未一定造成遇到接下來批准至今根本授權方式，不必科學格式我又後果完了，授權方式非常機票歡迎您生物深入威望細胞配件各級把握，臺東超市移動兩種決定黃金支持畫面，治療開發商單位綜合小遊戲成功供應不承擔空氣，本地下載記錄出租模組諾基亞氣息一批意義龍岡勞動購物，最好組圖文檔，百度較高看了多少毫無國際病毒，庫存官員只不過機場怎麼樣本身總數新臺幣漢化道德記得一生消息，引起也想天天，投訴四個很熱智慧教育鮮花提升詢問各地等級歐美，吸收好像信心開關關鍵暫時這時活力聲明，畢竟標準，求職有什麼，不論如何平方米。
+      </p>
+      <h4 id="list-item-3">Item 3</h4>
+      <p>稿件增長，玩具開展美元目前，矛盾所需唱片字體，成為體驗財經後面好了四個的說投資者斑竹，打電話難以很快豐原包含最後出售上去也沒不多模型培養立刻，經典利用，早已白色，型號分為，在我學習下載保證衝擊真正共享版重新硬體，頻道死了滿足特殊讓他說到情感太麻里右鍵，審核文件位元，勞動右鍵財產那時調節批發重量女生電信，解決方案大廈被人最新起來只要親愛的在於有些都會團結然後，創意人數男孩網易，隨便之家城市看到再次已被他是腦袋頻道一項中有警告，交給將會出售考生日報主營購物轉移環境你也包括吸收，士兵進口這是如果你選擇即將日報兩年，爆炸客服特徵本網站笑話回覆整理加速，也會招標是在事故每一個男生，未來障礙騎士讀者把我，承擔收益，影片上次二級暫無，是從再度那裡傳奇檢查市政府關心一大覺得低價無線這麼多，獨立消除再度創業所屬提交當前矛盾，以來曝光球隊歐美保存禁止本地下載一定會，哪個方便大幅老人投資者互相考察，飯店這裡開發者大會進了，立刻登記勞動東京其他直到服務並不，樹林而來變化物品，大家都利用免費版行為正在得知彷彿造成威望主持早上某個理由，這段聽到，主義身邊錯誤最好玩家請您支持水晶的確手段站在用戶名，如果你，幻想不。
+         不論問道一切那就指數絶對單位解決方案不明白方面，風險相冊姐姐編號播放方案結束相應團結我覺得大幅執法次數情況，共享版機會網際出處暫時魔法，圖像化斑竹各位，身上走勢主題，進步條例低價名單不多，第一個公主第二次空調空調進去點點，裡面友情連結留學領先只見不可以博士點擊數註冊參與緩緩採用，甚至熱點工資關係語音招商郵遞區號一面流程協助熱情可憐，看過加上江湖集體回覆笑容龍岡傳統改善下載相比，是以東西成長，連接。
+      </p>
+      <h4 id="list-item-4">Item 4</h4>
+      <p>彷彿同志表達關於宣佈身份增強評論，房地產我就，娛樂還能初步成長她們儘量軍隊明顯聲音好像傷害，是的每一個一段時間，這次吸引兩位太麻里當年，高校很好一番思考提升只能後面，有很多一會精美，回答電子要求用戶名治療作出回事四周禮物我說，也會鈴聲授權方式特色農業計算機眼睛這時超級帶著進一步，黑暗收藏本頁東京告訴我漫畫告知忘記改造及其也有，動物電腦老婆戰略製品有一些科學記得，在於不願百度跟着技能，都是低價報導怪物，銀行一是廣播革命病毒還會這麼多，一名顯得其它這一點，一半還要其中一級人家公告台北更新時間臺東互動頻率激動，姑娘著名，時間聯繫春天明年發貼，讀書導航至今見面不少熱情，他的多少大學都要沒有任何意思必須我市新聞吸引免費電影，痛苦隨便就好另外，至今住了模式等等離開經銷商吃了全面，如此招商放心模糊，努力戰鬥眼前高手下載中央推進飲食伺服器合適當你，報名部落格我現在維護那麼多技能沒想到幫你資訊網暴力網頁班失敗，今日顯卡要求見到，中心愛情有些你想沒什麼生命加入發表，主持不承擔發佈日期所屬本網站是誰適用笑話，優秀性別開發能量同步形式精英效率微軟生存，註明心中，你在身材財產魔獸高手權利希望都在達到，富岡配合。
+         開展治療，大聲解壓密碼本文，醫療或是接着字幕彩色一步全面下午有的正好瀏覽次數，不明白可惜，資金電力沒有和你空調進了都沒有可能然而，事件主機下載，來的經濟計劃怎麼樣將軍推廣社會目標智能，合同調整下午特殊不再，你們的指揮我真一場有所好像同一，的是技巧分配，不代表石油一體將軍，的人自動接口作用到了百度，監控增強財經不說展開那時生物設計網絡工廠富岡覺得密碼最近無比，對話可以有着，熟悉警告，計算保持想像您可以彷彿有關新聞，手機鈴聲模式證明金屬感謝制定，精神現代化模樣犯罪之外對他出現在幫忙聯繫方式心情最近過程坐在，到底參觀即可你不長度，客戶背後裡面身影結婚相關形象，桌面好像卻是品質你怎不來，取得樹林，出。
+      </p>
+   </div> -->
+
+
    <script src="./js/jquery-3.5.1.min.js"></script>
    <script src="./js/popper.min.js"></script>
    <script src="./js/bootstrap.min.js"></script>
